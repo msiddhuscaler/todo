@@ -25,7 +25,8 @@ class TodoItemsController < ApplicationController
   private
 
   def set_todo_item
-    @todo_item=@todo_list.todo_items.find(params[:id])
+    puts params[:id]
+    @todo_item = @todo_list.todo_items.find(params[:id])
   end
 
   def set_todo_list
